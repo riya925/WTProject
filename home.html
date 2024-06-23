@@ -1,0 +1,154 @@
+<html>
+<head>
+  <title>Fitness Club</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="home.css">
+  
+  <style>
+
+  </style>
+  .img1{ /* change */
+    background-size: cover; background-repeat: no-repeat;}
+  .img2{ /* change */
+    background-size: cover; background-repeat: no-repeat;}
+  .img3{ /* change*/ background-size: cover; background-repeat: no-repeat;}
+  .img4{ /* change*/ background-size: cover; background-repeat: no-repeat; }
+  .container1{height:100px; width:100px; }
+
+  <script>
+   var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+  }
+  </script>    
+</head>
+<body>
+    <nav style="position:fixed; top: 0px; left:0px; right:width:150%">
+        <ul>
+            <li><img src="l1.png"></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#abot">About Us</a></li>
+            <li><a href="#fec">Benefits</a></li>
+            <li><a href="./facilities.html">Facilities</a></li>
+            <li><a href="./program.html">Programs</a></li>
+            <li><a href="./app.html">Appointments</a></li>
+            <li><div class="dropdown">
+              <button class="dropbtn">Login
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="./login.html">Users</a>
+                  <a href="./login.html">Trainers</a>
+                  <a href="./login.html">Admin</a>
+              </div>
+            </div></li>
+            <li><img src="s1.png"><li>
+        </ul>
+    </nav>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade img1" style="display:block">   <!--change-->
+        <img src="f1.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade img2">                        <!--change-->
+        <img src="f2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade img3">                         <!--change-->
+        <img src="f3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade img4">                         <!--change-->
+        <img src="f4.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <div>
+        <a name="abot"></a>
+        <h1 style="text-align: center;">Why Fitness Club?</h1>
+      <p style="font-family:'Times New Roman'; font-size: 30px; padding-left: 10px;">
+        About Fitness Club<br>
+        <br>
+        Fitness Club stands alone with unique and exclusive equipment and a strong reputation that promotes a workout ethic.
+        Whether your fitness goal is to gain size, lose fat or improve your health, if you’re a beginner or seasoned exerciser,
+        Fitness Club has all the equipment you need for an honest workout.Fitness club brings a world class health & fitness experience.
+        <br>
+        <br>
+  
+        What We Offer<br>
+        <br>
+
+        We believe that fitness should take a 360 degree approach which should cover all elements of fitness like Aerobic, Anaerobic, 
+        hypertrophy, Agility, Flexibility and Functionality.As a member, you’ll have access to the state-of-the-art fitness studio,
+        expert advice for workouts & nutrition, an ambient environment & a refreshing cafe.With new equipments, new regimens and new 
+        software, we help our patrons take fitness to a new level.Hygiene & Pristine luxury for your best comfort.Computerized access 
+        and identiﬁcation control system to provide you with a seamless,error-free and futuristic experience at all times.Under expert 
+        guidance, this is a group activity that is a great deviation from working out alone.
+        <div style="padding-left: 10px; border: 1px solid black; font-size: 30px;">Change is inevitable, to evolve you need to put in efforts…
+            Its time to start your Workout!…..</div>
+      </p>
+    </div>
+
+    <div style="padding-bottom: 50px;">
+      <a name="fec"></a>
+      <h1 style="text-align: center;">Opportunities with Fitness Club</h1>
+    <p style="font-family:'Times New Roman'; font-size: 30px; padding-left: 10px;">
+      Benefits of Fitness Club<br>
+      <br>
+      At Fitness Club,our values are defined by the action and behaviours of many inspiring people who have helped build our company.
+      We want everyone in this team to believe in what we believe and to bring their own strengths and qualities to help build our future.
+      The best way to describe our values is to share our story;the things we do that help make us the business we are proud to be today 
+      and that lay the foundations for our futures together.
+      <br><br>
+
+      WE’D LOVE TO HEAR FROM YOU.<br>
+      <br>
+      If you would like to be part of our story,get in touch and tell us your story so far and how you can help us keep moving forwards.
+      With great development opportunities,team benefits and a working environment that will put a smile on your face every day.
+    </p>
+  </div>
+    
+    <div class="footer">
+        <p>Any Questions? Contact Us: +91 9876543211
+          Email Id:fitnessclub@gmail.com
+        </p>
+    </div>
+</body>
+</html>
